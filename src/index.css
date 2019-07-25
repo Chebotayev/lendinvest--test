@@ -11,3 +11,85 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  margin: 20px 100px;
+  background: #c5c5c5;
+  padding: 10px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  background-color: #0000009e;
+}
+
+.modal-wrapper__info {
+  animation: slide-in-top 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  padding: 15px;
+  background: white;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.footer {
+  text-align: center;
+}
+
+.loan {
+  border: 1px solid darkgrey;
+  padding: 0 20px;
+  background: white;
+  margin: 5px 0;
+}
+
+.loan__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: yellow;
+  border: 1px solid #d4d400;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-loan-info{
+  margin: 50px 0;
+}
+
+.invested{
+  color: green;
+}
+
+.error{
+  color: red;
+}
